@@ -23,7 +23,7 @@ module.exports = function (grunt) {
         watch: {
             javascripts: {
                 files: ['javascripts/**/*.js'],
-                tasks: ['jshint', 'broswerify']
+                tasks: ['jshint', 'browserify']
             },
             sass: {
                 files: ['sass/**/*.scss'],
@@ -33,8 +33,8 @@ module.exports = function (grunt) {
     });
 
     require("matchdep")
-        .filter("grunt-*")
+        .filterDev("grunt-*")
         .forEach(grunt.loadNpmTasks);
 
-    grunt.registerTask("default", ['jshint', 'sass', 'broswerify', 'watch']);
+    grunt.registerTask("default", ['jshint', 'sass', 'browserify', 'watch']);
 };
