@@ -1,8 +1,10 @@
 "use strict";
 
-// // // const transjap = require('./japanese');
-// const transspan = require('./spanish');
-// const transfrench = require('./french');
-// const transtag = require('./tagalog');
+// const transjap = require('./japanese');
+const transspan = require('./spanish');
+const transfrench = require('./french');
+const transtag = require('./tagalog');
 
-// transspan.getSpanish();
+transfrench.getFrench();
+transspan.getSpanish();
+transtag.getTagalog();

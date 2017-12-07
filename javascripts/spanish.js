@@ -1,11 +1,11 @@
 "use strict";
 // import { normalize } from "path";
 
-
+function getSpanish() {
 
 let spanish = {
     "Merry": "Feliz",
-    "Christmas!": "Navidad",
+    "Christmas!": "Navidad!",
     "And": "y",
     "don't":"no",
     "forget": "olvides",
@@ -13,7 +13,7 @@ let spanish = {
     "plan": "planificar",
     "before": "antes",
     "you": "de",
-    "code!": "codificar",
+    "code!": "codificar!",
 };
 
 let frenchChecked = document.getElementById("french");
@@ -53,11 +53,10 @@ function clearValue() {
     // clearButton = "";
     textTranslated.innerHTML = "";
     frenchChecked.checked = false;
-    japaneseChecked.checked = false;
+    // japaneseChecked.checked = false;
     spanishChecked.checked = false;
     tagalogChecked.checked = false;
 }
+}
 
-
-// module.exports = { getSpanish }; 
-
+module.exports = { getSpanish };
