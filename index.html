@@ -5,44 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Holiday Translator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="sass/main.scss">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <div>
-        <h3>Type this phrase, "Merry Christmas! And don't forget to plan before you code!" to see your Holiday translation in
-            your selected language</h3>
-    </div>
-    <div>
-        <input id="langInput" type="text" name="" value="">
-    </div>
-    <div>
-        <input type="radio" name="radio" id="Jap">Japanese
-    </div>
-    <div>
-        <input type="radio" name="radio" id="French">French
-    </div>
-    <div>
-        <input type="radio" name="radio" id="Spanish">Spanish
-    </div>
-    <div>
-        <input type="radio" name="radio" id="Tagalog">Tagalog
-    </div>
-    <div>
-        <button id="convert" type="button" name="button">Convert</button>
-        <button id="clear" type="button" name="button">Clear</button>
 
+    <div class="container">
+        <div style="background:transparent !important" class="jumbotron">
+            <img src="images/santa3.gif" alt="santa" align="right">
+            <h1>Xmas Translator</h1>
+            <p>Choose from Japanese, French, Spanish, and Tagalog</p>
+        </div>
+        <div>
+            <h3>Type this phrase, "Merry Christmas! And don't forget to plan before you code!" to see your Holiday translation
+                in your selected language</h3>
+
+        </div>
+        <div>
+            <input id="langInput" type="text" name="" value="">
+        </div>
+        <div>
+            <input type="radio" name="radio" id="jap">Japanese
+        </div>
+        <div>
+            <input type="radio" name="radio" id="french">French
+        </div>
+        <div>
+            <input type="radio" name="radio" id="spanish">Spanish
+        </div>
+        <div>
+            <input type="radio" name="radio" id="tagalog">Tagalog
+        </div>
+        <div>
+            <button id="convert" type="button" name="button">Convert</button>
+            <button id="clear" type="button" name="button">Clear</button>
+
+        </div>
+        <div>
+            <h1 id="output"></h1>
+        </div>
     </div>
-    <div>
-        <h1 id="output"></h1>
-    </div>
 
 
-
-
-
-
+    <script src="dist/bundle.js"></script>
+    <!-- <script src = "javascripts/spanish.js"></script>
+    <script src = "javascripts/french.js"></script>
+    <script src = "javascripts/tagalog.js"></script> -->
 </body>
-<script src="dist/bundle.js"></script>
 
 </html>
