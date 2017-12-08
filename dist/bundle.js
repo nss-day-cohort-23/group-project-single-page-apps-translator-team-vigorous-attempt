@@ -254,7 +254,8 @@ function getTagalog() {
     }
     // Add this to IF statement once japanese is done -- !japaneseChecked.checked && 
     else if(!tagalogChecked.checked && 
-        !frenchChecked.checked && 
+        !frenchChecked.checked &&
+        !japaneseChecked.checked &&  
         !spanishChecked.checked){
         window.alert("Please select a language to translate!");        
         return false;
